@@ -1,0 +1,313 @@
+/*importing fonts from google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+/*default settings for the whole page*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*setting up body color*/
+body {
+    background-color: black;
+}
+
+/*setting up the header of the page*/
+header {
+    box-sizing: border-box;
+    display: flex; /*displaying content side by side*/
+    justify-content: space-between; /*adding space between content*/
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid white;
+    padding: 25px 30px;
+}
+
+/*logo settings*/
+.logo{
+    font-size: 40px;
+    font-family: 'montserrat', sans-serif; /*setting up imported font*/
+    font-weight: bold;
+    color: white;
+}
+.logolink {
+    text-decoration: none; /*removing the line under of logo*/
+}
+
+/*Setting up navigation*/
+.nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+.login, .log, .sign, .signup, .men, .mlink, .women, .wlink {
+    padding: 9px 16px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-family: 'montserrat', sans-serif;
+    transition: transform 0.3s ease;
+}
+.home, .hlink {  /*since we are on home page, we make it look different*/
+    padding: 9px 16px;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    font-family: 'montserrat', sans-serif;
+}
+/*hover settings*/
+.login:hover, .log:hover, .sign:hover, .signup:hover, .men:hover, .mlink:hover, .women:hover, .wlink:hover {
+    transform: scale(0.96);
+}
+
+/*Designing 'Trending' heading*/
+.trending { 
+    color: white;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 400;
+    margin-top: 40px;
+    text-align: center;
+}
+/*Implementing the total space to display the trending*/
+.cboxmajor {
+    width: 100%;
+    height: 550px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/*Implementing the space to display trending cards*/
+.cboxminor {
+    width: 85%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Designing the trending cards*/
+.cbox1, .cbox2, .cbox3, .cbox4 {
+    background-color: transparent;
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*designing the space for image within the card*/
+.cbox1img, .cbox2img, .cbox3img, .cbox4img {
+    width: 90%;
+    height: 75%;
+    background-color: transparent;
+}
+
+/*designing the space for content within the card*/
+.cbox1content, .cbox2content, .cbox3content, .cbox4content {
+    width: 90%;
+    height: 25%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*designing the buy button*/
+.button1, .button2, .button3, .button4 {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 800;
+    border: none;
+    margin-top: 6%;
+    transition: transform 0.3s ease; /*setting up transition setting on hover*/
+}
+.button1:hover, .button2:hover, .button3:hover, .button4:hover {
+    transform: scale(0.9);
+}
+
+/*Setting image size*/
+.image1, .image2, .image3, .image4 {
+    width: 100%;
+    height: 100%;
+}
+
+/*Designing content*/
+.name1, .name2, .name3, .name4 {
+    font-family: 'montserrat', sans-serif;
+    font-weight: 450;
+    color: white;
+    margin-top: 5%;
+}
+
+.color1, .color2, .color3, .color4 {
+    font-family: 'montserrat', sans-serif;
+    font-weight: 450;
+    color: white;
+    margin-top: 1%;
+}
+
+.price1, .price2, .price3, .price4 {
+    font-family: 'montserrat', sans-serif;
+    font-weight: 450;
+    font-size: 14px;
+    color: white;
+    margin-top: 2%;
+}
+
+
+
+
+/*Designing 'Sales' heading*/
+.sales { 
+    color: white;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 400;
+    margin-top: 40px;
+    text-align: center;
+}
+/*Implementing the total space to display sales*/
+.sboxmajor {
+    width: 100%;
+    height: 550px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/*Implementing the space to display sales cards*/
+.sboxminor {
+    width: 85%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Desiging the sales cards*/
+.sbox1, .sbox2, .sbox3, .sbox4 {
+    background-color: transparent;
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*designing the space for image within the card*/
+.sbox1img, .sbox2img, .sbox3img, .sbox4img {
+    width: 90%;
+    height: 75%;
+    background-color: transparent;
+}
+
+/*designing the space for content within the card*/
+.sbox1content, .sbox2content, .sbox3content, .sbox4content {
+    width: 90%;
+    height: 25%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*designing the buy button*/
+.sbutton4, .sbutton3, .sbutton2, .sbutton1 {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 800;
+    border: none;
+    margin-top: 6%;
+    transition: transform 0.3s ease; /*setting up transition setting on hover*/
+}
+.sbutton4:hover, .sbutton3:hover, .sbutton2:hover, .sbutton1:hover {
+    transform: scale(0.9);
+}
+
+/*Setting image size*/
+.simage1, .simage2, .simage3, .simage4 {
+    width: 100%;
+    height: 100%;
+}
+
+/*Designing content*/
+.sname1, .sname2, .sname3, .sname4 {
+    font-family: 'montserrat', sans-serif;
+    font-weight: 450;
+    color: white;
+    margin-top: 5%;
+}
+
+.scolor1, .scolor2, .scolor3, .scolor4 {
+    font-family: 'montserrat', sans-serif;
+    font-weight: 450;
+    color: white;
+    margin-top: 1%;
+}
+
+.sprice1, .sprice2, .sprice3, .sprice4 {
+    font-family: 'montserrat', sans-serif;
+    font-weight: 450;
+    font-size: 14px;
+    color: white;
+    margin-top: 2%;
+}
+
+.sprice1r, .sprice2r, .sprice3r, .sprice4r {
+    font-family: 'montserrat', sans-serif;
+    font-weight: 450;
+    font-size: 14px;
+    color: white;
+    margin-top: 2%;
+}
+
+
+
+
+/*Designing the footer*/
+footer {
+    box-sizing: border-box;
+    border-top: 1px solid white;
+    margin-top: 8%;
+    width: 100%;
+    padding: 25px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.corner {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.feedback, .contactus {
+    padding: 9px 16px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-family: 'montserrat', sans-serif;
+    transition: transform 0.3s ease;
+}
+.feed, .cont {
+    padding: 0px 10px;
+}
+.power li {
+    list-style-type: none;
+    color: white;
+    font-family: 'montserrat', sans-serif;
+}

@@ -1,0 +1,202 @@
+/*importing fonts from google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+/*default settings for the whole page*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*setting up body color*/
+body {
+    background-color: black;
+    
+}
+
+/*setting up the header of the page*/
+header {
+    box-sizing: border-box;
+    display: flex; /*displaying content side by side*/
+    justify-content: space-between; /*adding space between content*/
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid white;
+    padding: 25px 30px;
+}
+
+/*logo settings*/
+.logo{
+    font-size: 40px;
+    font-family: 'montserrat', sans-serif; /*setting up imported font*/
+    font-weight: bold;
+    color: white;
+}
+.logolink {
+    text-decoration: none; /*removing the line under of logo*/
+}
+
+/*Setting up navigation*/
+.nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+.home, .hlink, .log, .login, .sign, .signup, .men, .mlink, .women, .wlink {
+    padding: 9px 16px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-family: 'montserrat', sans-serif;
+    transition: transform 0.3s ease;
+}
+
+/*hover settings*/
+.home:hover, .hlink:hover, .log:hover, .login:hover, .sign:hover, .signup:hover, .men:hover, .mlink:hover, .women:hover, .wlink:hover {
+    transform: scale(0.96);
+}
+/*Designing the footer*/
+footer {
+    box-sizing: border-box;
+    border-top: 1px solid white;
+    margin-top: 8%;
+    width: 100%;
+    padding: 25px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.contact {
+    padding: 9px 16px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-family: 'montserrat', sans-serif;
+    transition: transform 0.3s ease;
+}
+.power li {
+    list-style-type: none;
+    color: white;
+    font-family: 'montserrat', sans-serif;
+}
+
+
+
+.second a:hover {
+    color: rgb(92, 92, 92) ;
+}
+
+.active-2 {
+    color: rgb(92, 92, 92) 
+}
+
+
+.breadcrumb>li+li:before {
+    content: "" !important
+}
+
+.breadcrumb {
+    padding: 0px;
+    font-size: 10px;
+    color: #aaa !important;
+}
+
+.first {
+    background-color: white ;
+}
+
+a {
+    text-decoration: none !important;
+    color: #aaa ;
+}
+
+.btn-lg,.form-control-sm:focus,
+.form-control-sm:active,
+a:focus,a:active {
+    outline: none !important;
+    box-shadow: none !important
+}
+
+.form-control-sm:focus{
+    border:1.5px solid #4bb8a9 ; 
+}
+
+.btn-group-lg>.btn, .btn-lg {
+    padding: .5rem 0.1rem;
+    font-size: 1rem;
+    border-radius: 0;
+    color: white !important;
+    background-color: #4bb8a9;
+    height: 2.8rem !important;
+    border-radius: 0.2rem !important;
+}
+
+.btn-group-lg>.btn:hover, .btn-lg:hover {
+    background-color: #26A69A;
+}
+
+.btn-outline-primary{
+    background-color: #fff !important;
+    color:#4bb8a9 !important;
+    border-radius: 0.2rem !important;   
+    border:1px solid #4bb8a9;
+}
+
+.btn-outline-primary:hover{
+    background-color:#4bb8a9  !important;
+    color:#fff !important;
+    border:1px solid #4bb8a9;
+}
+
+.card-2{
+    margin-top: 40px !important;
+}
+
+.card-header{
+    background-color: #fff;
+    border-bottom:0px solid #aaaa !important;
+}
+
+p{
+    font-size: 13px ;
+}
+        
+.small{
+    font-size: 9px !important;
+}
+
+.form-control-sm {
+    height: calc(2.2em + .5rem + 2px);
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: 0;   
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.boxed {
+    padding: 0px 8px 0 8px ;
+    background-color: #4bb8a9;
+    color: white;
+}
+
+.boxed-1{
+    padding: 0px 8px 0 8px ;
+    color: black !important;
+    border: 1px solid #aaaa;
+}
+
+.bell{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .breadcrumb-item+.breadcrumb-item {
+        padding-left: 0
+    }
+}

@@ -1,0 +1,96 @@
+/*importing fonts from google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+/*default settings for the whole page*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*setting up body color*/
+body {
+    background-color: black;
+}
+
+/*setting up the header of the page*/
+header {
+    box-sizing: border-box;
+    display: flex; /*displaying content side by side*/
+    justify-content: space-between; /*adding space between content*/
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid white;
+    padding: 25px 30px;
+}
+
+/*logo settings*/
+.logo{
+    font-size: 40px;
+    font-family: 'montserrat', sans-serif; /*setting up imported font*/
+    font-weight: bold;
+    color: white;
+}
+.logolink {
+    text-decoration: none; /*removing the line under of logo*/
+}
+
+/*Setting up navigation*/
+.nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+.home, .hlink, .sign, .signup, .men, .mlink, .women, .wlink {
+    padding: 9px 16px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-family: 'montserrat', sans-serif;
+    transition: transform 0.3s ease;
+}
+.login, .log {  /*since we are on login page, we make it look different*/
+    padding: 9px 16px;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    font-family: 'montserrat', sans-serif;
+}
+/*hover settings*/
+.home:hover, .hlink:hover, .sign:hover, .signup:hover, .men:hover, .mlink:hover, .women:hover, .wlink:hover {
+    transform: scale(0.96);
+}
+/*Designing the footer*/
+footer {
+    box-sizing: border-box;
+    border-top: 1px solid white;
+    margin-top: 8%;
+    width: 100%;
+    padding: 25px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.corner {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.feedback, .contactus {
+    padding: 9px 16px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-family: 'montserrat', sans-serif;
+    transition: transform 0.3s ease;
+}
+.feed, .cont {
+    padding: 0px 10px;
+}
+.power li {
+    list-style-type: none;
+    color: white;
+    font-family: 'montserrat', sans-serif;
+}
